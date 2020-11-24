@@ -7,11 +7,11 @@
   },
   "dependencies": {
     "body-parser": "~1.15.1",
-    "cookie-parser": "^1.4.4",
+    "cookie-parser": "^1.4.5",
     "debug": "~2.2.0",
     "ejs": "^2.7.4",
     "email-validator": "^1.2.3",
-    "express": "^4.13.4",
+    "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "mime": "^1.6.0",
     "morgan": "~1.7.0",
