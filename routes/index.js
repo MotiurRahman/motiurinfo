@@ -19,20 +19,32 @@ router.get('/', function(req, res, next) {
     console.log("phone:" + Phone);
     console.log("message:" + Message);
 
-    var transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        auth: {
-            user: 'motiur.mbstu@gmail.com', // Your email id
-            pass: 'ugtsqqbrdyabdvpg' // Your password
-        }
-    });
+    // var transporter = nodemailer.createTransport({
+    //     host: 'smtp.gmail.com',
+    //     port: 587,
+    //     secure: false,
+    //     auth: {
+    //         user: 'motiur.mbstu@gmail.com', // Your email id
+    //         pass: 'urfaqfmhkjgbqhrn' // Your password
+    //     }
+    // });
+
+
+
+    const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+        user: 'alexzander86@ethereal.email',
+        pass: 'e9QnrZwdAvHXT5161k'
+    }
+});
 
 
     var mailOptions = {
         from: Email, // sender address
-        to: 'motiur.mbstu@gmail.com', // list of receivers
-        subject: Name, // Subject line
+        to: 'Recipient <motiur.mbstu@gmail.com>', // list of receivers
+        subject: `From ${Name}`, // Subject line
         text: Message //, // plaintext body
             // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
     };
