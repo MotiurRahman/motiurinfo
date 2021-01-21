@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.15.1",
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "debug": "^4.3.1",
     "ejs": "^2.7.4",
@@ -14,8 +14,8 @@
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "mime": "^1.6.0",
-    "morgan": "~1.7.0",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.4.16",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "^2.5.0"
   }
 }
