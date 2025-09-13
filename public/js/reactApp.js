@@ -88,7 +88,7 @@ reactProjectsData.forEach((project) => {
   const projectCard = document.createElement("div");
   projectCard.classList.add("col-12", "col-md-6", "col-lg-4");
   projectCard.style = "margin-bottom:20px";
-  projectCard.innerHTML = `<div class="card bg-success" style="height:120px;">
+  projectCard.innerHTML = `<div class="card bg-success" style="height:130px;">
  <div class="card-body" style="padding-top:10px;">
    <h5 class="card-title">${project.title}</h5>
    <h6 class="card-subtitle mb-2 text-muted">${project.technology}</h6>
@@ -115,8 +115,8 @@ jsProjectsData.forEach((project) => {
   const projectCard = document.createElement("div");
   projectCard.classList.add("col-12", "col-md-6", "col-lg-4");
   projectCard.style = "margin-bottom:20px";
-  projectCard.innerHTML = `<div class="card bg-success" style="height:120px;">
-   <div class="card-body" style="padding-top:10px;">
+  projectCard.innerHTML = `<div class="card bg-success" style="height:130px; padding:10px">
+   <div class="card-body">
      <h5 class="card-title">${project.title}</h5>
      <h6 class="card-subtitle mb-2 text-muted">${project.technology}</h6>
      <a target="_blank" href="${
